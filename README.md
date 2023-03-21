@@ -1,4 +1,4 @@
-# Capacita-ao_Tecnologica
+# Capacitacao_Tecnologica
 
 Projetos (simulaçoes feitas): 
 
