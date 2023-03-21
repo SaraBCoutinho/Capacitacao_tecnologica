@@ -26,20 +26,28 @@ Saida: imprimir o % de lucro
 
 """
 def main():
-  #entradas
-  vp= float(input("Digite o valor do produto: "))
-  
-  #processamento
-  if vp < 25.0:
-    print("Lucro de 100%")                #saida
-  elif vp >= 25.0 and vp < 100.0:
-    print("Lucro de 70%")                 #saida
-  elif vp >= 100.0 and vp < 500.0:
-    print("Lucro de 60%")                 #saida
-  elif vp >= 500.0 and vp < 1000.0:
-    print("Lucro de 50%")                 #saida
-  else:
-    print("Lucro de 40%")
+  try:
+    #entradas
+    vp= float(input("Digite o valor do produto: "))
+    
+    #processamento
+    if vp < 25.0:
+      print("Lucro de 100%")                #saida
+    elif vp >= 25.0 and vp < 100.0:
+      print("Lucro de 70%")                 #saida
+    elif vp >= 100.0 and vp < 500.0:
+      print("Lucro de 60%")                 #saida
+    elif vp >= 500.0 and vp < 1000.0:
+      print("Lucro de 50%")                 #saida
+    else:
+      print("Lucro de 40%")  
+ 
+  except: 
+    print("Numero invalido. Refazer, por gentileza, o processo.")
+
+#Valor g
+if __name__ == "__main__":
+  main()
 
 #Valor 5
 if __name__ == "__main__":
@@ -74,23 +82,32 @@ Observaçao: Assumiu-se os valores como float a fim de generalizar pra inteiros 
 """
 
 def main():
-  #entrada
-  x, y, z = input().split()
-  x, y, z = float(x), float(y), float(z)
+  try: 
+    #entrada
+    x, y, z = input().split()
+    x, y, z = float(x), float(y), float(z)
 
-  #processamento
-  maior = max(x, y, z)
-  menor = min(x, y, z)
+    #processamento
+    maior = max(x, y, z)
+    menor = min(x, y, z)
 
-  if x != maior and x != menor:
-    medio = x
-  elif y != maior and y != menor:
-    medio = y 
-  else: 
-    medio = z
+    if x != maior and x != menor:
+      medio = x
+    elif y != maior and y != menor:
+      medio = y 
+    else: 
+      medio = z
 
-  #saida
-  print("O menor valor é: ", menor,", O valor médio é: ", medio, ", O valor maior é: ", maior, "." )
+    #saida
+    print("O menor valor é: ", menor,", O valor médio é: ", medio, ", O valor maior é: ", maior, "." )
+  
+  except: 
+    print("Numeros invalidos. Refazer, por gentileza, o processo.")
 
+#Numeros a z g 
+if __name__ == "__main__":
+  main()
+
+#Numeros 2, 4, 5 
 if __name__ == "__main__":
   main()
